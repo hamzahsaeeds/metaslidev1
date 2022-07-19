@@ -10,12 +10,20 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          className="FB-link"
+          href="https://facebook.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Facebook
+        </a>
+        <a
+          className="WhatsApp-link"
+          href="https://wa.me/+923174149260"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
         </a>
       </header>
     </div>
