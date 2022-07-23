@@ -1,5 +1,7 @@
 import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
+import Fetch from './components/Fetch';
 
 function App() {
   return (
@@ -9,7 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
+        {/* <a
           className="FB-link"
           href="https://facebook.com"
           target="_blank"
@@ -24,8 +26,16 @@ function App() {
           rel="noopener noreferrer"
         >
           WhatsApp
-        </a>
+        </a> */}
       </header>
+
+      <Router>
+        <div className='routes'>
+          <Routes>
+            <Route path="/fetch" element={<Fetch />} />
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }
